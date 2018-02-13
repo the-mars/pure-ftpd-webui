@@ -18,7 +18,7 @@ echo("<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://
 ");
 		if (isset ($_POST['install'])) {
 			echo("
-				<form name=\"2\" method=\"post\" action=\"$_SERVER['PHP_SELF']\">
+				<form name=\"2\" method=\"post\" action=\"{$_SERVER['PHP_SELF']}\">
 					<tr>
 						<td align=\"right\" width=\"10%\">
 							<p align=\"left\">
@@ -268,7 +268,7 @@ echo("<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://
 				// Здесь будет создание конфига для конекта к базе //
 				create_webui_conf();
 				echo("
-					<form name=\"3\" method=\"post\" action=\"$_SERVER['PHP_SELF']\">
+					<form name=\"3\" method=\"post\" action=\"{$_SERVER['PHP_SELF']}\">
                     <tr>
                         <td align=\"right\" width=\"10%\">
                         	<p align=\"left\" class=\"text_title\" >To create Pure-FTPd WebUI administrator</br>fill in the following fields</p>
@@ -341,7 +341,7 @@ echo("<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://
 			echo("
 				<p align=\"center\" class=\"text_title\" >Welcome to </br> Pure-FTPd WebUI $version installer</p>
 
-				<form name=\"1\" method=\"post\" action=\"$_SERVER['PHP_SELF']\">
+				<form name=\"1\" method=\"post\" action=\"{$_SERVER['PHP_SELF']}\">
 					<p align=\"center\">
 						<label>
 							<input type=\"submit\" name=\"install\" id=\"install\" value=\"Install\">
